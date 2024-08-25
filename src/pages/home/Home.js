@@ -1,6 +1,6 @@
 import React from "react";
 import LocationCard from "../../component/cards/LocationCard";
-import Banner from "../../component/cards/Banner";
+import Banner from "../../component/banner/Banner";
 import "../../pages/home/Home.sass";
 
 function Home() {

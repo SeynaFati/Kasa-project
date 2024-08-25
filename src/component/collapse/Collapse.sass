@@ -1,16 +1,26 @@
 .collapse
-  .collapse-child
-    max-height: 100px
-    overflow: hidden
-    padding: 0
-    color: blue
+  .chevronOpen
+    transform: rotate(180deg)
 
-  .collapse-child.open
-    color: black
-    max-height: 500px // Ajuste en fonction du contenu maximum possible
+span
+  transition: transform 0.3s ease-in-out
 
 .collapse-child
+  height: 0 !important
+  max-height: 100px
+  overflow: hidden
+  padding: 0
+  color: blue
+  transition: height 0.3s ease-in-out
+
+  &.open
+    color: black
+    height: auto !important
+    ul
+      height: auto !important
+
   ul
     list-style-type: none
     margin: 0
     padding: 0
+    height: 0 !important

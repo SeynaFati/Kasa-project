@@ -13,12 +13,17 @@ function Collapse({ title, children }) {
       <div className="about">
         <div className="collapse">
           <h2 className="collapse-title">{title}</h2>
-          <span onClick={toggleCollapse} className="chevron-down">
-            <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />
+          <span
+            onClick={toggleCollapse}
+            className={isOpen ? "" : "chevronOpen"}
+          >
+            <FontAwesomeIcon icon={faChevronDown} />
           </span>
         </div>
 
-        {isOpen && <div className="collapse-child">{children}</div>}
+        <div className={isOpen ? "collapse-child open" : "collapse-child"}>
+          {children}
+        </div>
       </div>
     );
   }

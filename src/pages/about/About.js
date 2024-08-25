@@ -1,4 +1,4 @@
-import Banner from "../../component/cards/Banner";
+import Banner from "../../component/banner/Banner";
 import Collapse from "../../component/collapse/Collapse";
 import "../home/Home.sass";
 import "./About.sass";
