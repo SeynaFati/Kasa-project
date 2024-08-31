@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 function Collapse({ title, children }) {
   {
@@ -17,7 +15,7 @@ function Collapse({ title, children }) {
             onClick={toggleCollapse}
             className={isOpen ? "" : "chevronOpen"}
           >
-            <FontAwesomeIcon icon={faChevronDown} />
+            <i className="fa-solid fa-chevron-down"></i>
           </span>
         </div>
 
