@@ -33,7 +33,7 @@ function Slideshow({ pictures }) {
           key={index}
         >
           {index === currentIndex && (
-            <img src={picture} alt="apartment image" className="image" />
+            <img src={picture} alt="apartmentimage" className="image" />
           )}
         </div>
       ))}

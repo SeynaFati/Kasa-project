@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 
 function Collapse({ title, children }) {
-  {
-    const [isOpen, setIsOpen] = useState(false);
-    const toggleCollapse = () => {
-      setIsOpen(!isOpen);
-    };
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleCollapse = () => {
+    setIsOpen(!isOpen);
 
     return (
       <div className="about">
@@ -24,7 +22,7 @@ function Collapse({ title, children }) {
         </div>
       </div>
     );
-  }
+  };
 }
 
 export default Collapse;
